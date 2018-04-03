@@ -1,0 +1,6 @@
+Two days ago I checked Tslgame.exe with process explorer(https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer)
+and saw strange code which refered to https://www.digicert.com/.This company works with SSL sertificates and data encryption.
+Process of encryption described here: https://www.digicert.com/code-signing/ .Probably BlueHole uses their help to encrypt data.
+I attached some screenshots of process explorer here: https://photos.app.goo.gl/M3QeCPpOOxOp0erg2.
+P.s.
+Process BEservice.exe has same code.
