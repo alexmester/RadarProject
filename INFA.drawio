@@ -1,6 +1,6 @@
-<mxfile host="www.draw.io" modified="2020-01-19T16:15:56.648Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36 OPR/65.0.3467.78" etag="uzBBeDn6awAvwgmBUCB_" version="12.5.5" type="github">
+<mxfile host="www.draw.io" modified="2020-01-19T16:50:33.191Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36 OPR/65.0.3467.78" etag="RquJ_OfjA0oe6RTmZuJ_" version="12.5.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="2209" dy="2002" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2801" dy="2359" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0"/>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0"/>
@@ -2048,6 +2048,12 @@
         </mxCell>
         <mxCell id="PpnY--8BTq10CP7_f4mS-363" value="printf(&quot;%c = %d\n&quot;, i, flag[i])" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="6600" y="1636" width="150" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="PpnY--8BTq10CP7_f4mS-374" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="5980" y="2250" width="40" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="PpnY--8BTq10CP7_f4mS-375" value="int main() &lt;br&gt;{ &lt;br&gt;&amp;nbsp;char s[N] = &quot; ... &quot;, *pstr[SIZE], *t; &lt;br&gt;&amp;nbsp;int n, i, j, l, flag[256] = {0}, count = 0;&lt;br&gt;&amp;nbsp;puts(s);&lt;br&gt;&amp;nbsp;for (i = 0; DEL[i]; i++)             flag[DEL[i]] = 1;&lt;br&gt;&amp;nbsp;for (i = 0; s[i] &amp;amp;&amp;amp; flag[s[i]]; i++)&lt;br&gt;&amp;nbsp;; &lt;br&gt;&amp;nbsp;n = 0;&lt;br&gt;&amp;nbsp;while (s[i]) &lt;br&gt;&amp;nbsp;{&lt;br&gt;&amp;nbsp;j = i;&lt;br&gt;&amp;nbsp;while (s[i] &amp;amp;&amp;amp; !flag[s[i]])&lt;br&gt;&amp;nbsp;i++;&lt;br&gt;&amp;nbsp;pstr[n] = (char *)malloc((i - j + 1) * sizeof(char));&lt;br&gt;&amp;nbsp;strncpy(pstr[n], &amp;amp;s[j], i - j);&lt;br&gt;&amp;nbsp;pstr[n][i - j] = &#39;\0&#39;;&lt;br&gt;&amp;nbsp;n++;&lt;br&gt;&amp;nbsp;while (s[i] &amp;amp;&amp;amp; flag[s[i]])&lt;br&gt;&amp;nbsp;i++;&lt;br&gt;&amp;nbsp;}&lt;br&gt;&amp;nbsp;QuickSortWords(pstr, 0, n - 1);&lt;br&gt;&amp;nbsp;printf(&quot;\nThe words are in alphabetical order:\n&quot;);&lt;br&gt;&amp;nbsp;for(i = 0; i &amp;lt; n - 1; i++)      puts(pstr[i]);&lt;br&gt;&amp;nbsp;for(i = 0; i &amp;lt; n; i++)&lt;br&gt;&amp;nbsp;if(!CheckQ(pstr[i]))&lt;br&gt;&amp;nbsp;count++;&lt;br&gt;&amp;nbsp;printf(&quot;\nThe number of words with the condition &#39;Q&#39;:  %d\n&quot;, count);&lt;br&gt;&amp;nbsp;t = pstr[0];&lt;br&gt;&amp;nbsp;for(i = 0; i &amp;lt; n - 1; i++)&lt;br&gt;&amp;nbsp;if(strlen(t) &amp;lt; strlen(pstr[i+1]))&lt;br&gt;&amp;nbsp;t = pstr[i+1];&lt;br&gt;&amp;nbsp;*t = DeleteT(t);&lt;br&gt;&amp;nbsp;printf(&quot;\nString &#39;t&#39; without digits:  &quot;);&lt;br&gt;&amp;nbsp;puts(t);&lt;br&gt;&amp;nbsp;return 0;&lt;br&gt;}" style="text;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="6800" y="1270" width="300" height="30" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
